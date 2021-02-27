@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
+.brdr {
+    @apply border-b-2 border-indigo-300;
+}
+.focusOv {
+    @apply focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-transparent;
+}
 @tailwind utilities;
