@@ -7,5 +7,5 @@ module.exports = {
     variants: {
         extend: { backgroundColor: ["active"] },
     },
-    plugins: [],
+    plugins: [require("@tailwindcss/typography")],
 };

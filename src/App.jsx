@@ -64,13 +64,13 @@ function App() {
         <div className="max-w-6xl mx-auto">
             <header className="mt-6">
                 <div className="">
-                    <h1 className="text-4xl text-gray-800 tracking-widest cursor-default my-10">
+                    <h1 className="text-4xl font-semibold text-gray-800 tracking-widest cursor-default my-10">
                         Cifar
                     </h1>
                 </div>
             </header>
 
-            <div className="grid grid-cols-2 bg-gray-100 mt-6 h-96">
+            <div className="grid grid-cols-2 bg-gray-100 mt-6 h-auto rounded-md">
                 <div className="space-y-6 self-center mx-auto">
                     <p className={`text-center text-red-600 ${alertDisplay}`}>
                         {alert}
@@ -125,14 +125,45 @@ function App() {
                         type="button"
                         value="Generate"
                         onClick={generatePhrase}
-                        className="px-5 py-2 bg-indigo-500 text-white rounded-sm uppercase cursor-pointer text-sm tracking-widest hover:bg-indigo-400 active:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+                        className="px-5 py-2 font-semibold bg-indigo-500 text-white rounded-sm uppercase cursor-pointer text-sm tracking-widest hover:bg-indigo-400 active:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-300"
                     />
                 </div>
-                <div className="">
-                    {/* <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Deleniti, maxime.
-                    </p> */}
+                <div className="px-4 py-10 cursor-default">
+                    <div className="prose">
+                        <h1 className="">
+                            <span className="text-indigo-600">Encryption</span>{" "}
+                            as a&nbsp;
+                            <span className="text-gray-700 ">
+                                Password Manager
+                            </span>
+                        </h1>
+
+                        <p className="text-gray-900 opacity-95">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Laborum fuga nulla natus. Quasi obcaecati illo
+                            eum, accusamus voluptate quisquam molestias deserunt
+                            hic debitis cum, alias vero possimus totam ullam
+                            voluptates?
+                        </p>
+
+                        <p className="text-gray-900 opacity-60">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sit ut numquam quibusdam. Similique sequi
+                            minus cupiditate sint aliquam voluptate repudiandae.
+                        </p>
+                    </div>
+
+                    <br />
+                    <br />
+
+                    <p>
+                        <a
+                            href="/"
+                            className="px-5 py-2 font-semibold bg-gray-300 text-gray-900 rounded-sm uppercase cursor-pointer text-sm tracking-widest hover:bg-gray-400 active:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300"
+                        >
+                            Lean more
+                        </a>
+                    </p>
                 </div>
             </div>
 
