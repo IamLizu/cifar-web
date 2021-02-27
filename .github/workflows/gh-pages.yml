@@ -1,0 +1,25 @@
+name: GitHub Pages
+on:
+    push:
+        branches:
+            - master
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [14.x]
+        steps:
+            - uses: actions/checkout@v1
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
+            - name: Installing dependencies
+              run: npm i
+            - name: Deploying to GitHub Pages
+              run: |
+                  git config --global user.email ${{ secrets.EMAIL }}
+                  git config --global user.name ${{ secrets.USERNAME }}
+                  git remote set-url origin https://${{ secrets.PERSONAL_AC }}@github.com/${{ secrets.USERNAME }}/${{ secrets.REPO }}.git
+                  npm run deploy
