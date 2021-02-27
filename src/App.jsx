@@ -64,26 +64,28 @@ function App() {
         <div className="max-w-6xl mx-auto">
             <header className="mt-4">
                 <div className="">
-                    <h1 className="text-4xl font-semibold text-gray-800 tracking-widest cursor-default my-7">
+                    <h1 className="md:text-4xl text-2xl text-center font-semibold text-gray-800 tracking-widest cursor-default md:my-7">
                         Cifar
                     </h1>
                 </div>
             </header>
 
-            <div className="grid grid-cols-2 bg-gray-100 mt-5 h-auto rounded-md">
-                <div className="space-y-6 self-center mx-auto">
-                    <p className={`text-center text-red-600 ${alertDisplay}`}>
+            <div className="md:grid md:grid-cols-2 bg-gray-100 md:mt-5 h-auto xl:mt-12">
+                <div className="md:space-y-6 space-y-10 self-center mx-auto px-5">
+                    <p
+                        className={`text-center pt-1 text-sm md:text-base text-red-600 ${alertDisplay}`}
+                    >
                         {alert}
                     </p>
                     <p
-                        className={`${infoDisplay} text-center pr-10 text-gray-900 opacity-50 pl-3 text-xs`}
+                        className={`${infoDisplay} pt-1 text-center md:pr-10 text-gray-900 opacity-50 md:pl-3 text-xs`}
                     >
                         {info}
                     </p>
                     <div className={`${cipherDisplay}  flex justify-center`}>
                         <input
                             id="cipher"
-                            className={`text-center inline h-10 text-gray-900 px-3 py-2 text-lg border border-indigo-300 focus:outline-none`}
+                            className={`text-center inline h-10 text-gray-900 md:px-2 md:py-2 md:text-lg border border-indigo-300 focus:outline-none`}
                             value={cipher}
                             readOnly
                         />
@@ -101,8 +103,9 @@ function App() {
                         onChange={handleString}
                         value={string}
                         placeholder="Enter string"
-                        className="w-80 h-13 text-gray-900 px-3 py-2 text-lg brdr focusOv"
+                        className="md:w-80 w-full h-13 text-gray-900 px-3 py-2 md:text-lg brdr focusOv"
                     />
+
                     <br />
 
                     <select
@@ -125,12 +128,13 @@ function App() {
                         type="button"
                         value="Generate"
                         onClick={generatePhrase}
-                        className="px-5 py-2 font-semibold bg-indigo-500 text-white rounded-sm uppercase cursor-pointer text-sm tracking-widest hover:bg-indigo-400 active:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+                        className="px-5 py-2 font-semibold bg-indigo-500 text-white rounded-sm uppercase cursor-pointer text-xs md:text-sm tracking-widest hover:bg-indigo-400 active:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-300"
                     />
                 </div>
+                <hr className="md:hidden mt-10 opacity-25 border-b border-indigo-400" />
                 <div className="px-4 py-10 cursor-default">
-                    <div className="prose">
-                        <h1 className="">
+                    <div className="md:prose prose-sm">
+                        <h1 className="font-semibold">
                             <span className="text-indigo-600">Encryption</span>{" "}
                             as a&nbsp;
                             <span className="text-gray-700 ">
@@ -159,7 +163,7 @@ function App() {
                     <p>
                         <a
                             href="/"
-                            className="px-5 py-2 font-semibold bg-gray-300 text-gray-900 rounded-sm uppercase cursor-pointer text-sm tracking-widest hover:bg-gray-400 active:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300"
+                            className="px-5 py-2 font-semibold bg-gray-300 text-gray-900 rounded-sm uppercase cursor-pointer md:text-sm text-xs tracking-widest hover:bg-gray-400 active:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300"
                         >
                             Lean more
                         </a>
@@ -167,25 +171,28 @@ function App() {
                 </div>
             </div>
 
-            <div className="mt-8 flex justify-between">
-                <p>
+            <div className="md:mt-10 x:mt-16 px-3 pb-9 md:flex md:justify-between">
+                <p className="">
                     <a
-                        className="font-medium"
+                        className="font-medium text-xs md:text-base"
                         href="https://github.com/IamLizu/cifar-web"
                     >
                         GitHub
                     </a>
                     &nbsp;/&nbsp;
                     <a
-                        className="font-medium"
+                        className="font-medium  text-xs md:text-base "
                         href="https://www.npmjs.com/package/cifar"
                     >
                         NPM Package Registry
                     </a>
                 </p>
-                <p>
+                <p className="text-xs md:text-base ">
                     Made with 💙 by{" "}
-                    <a className="font-mono" href="https://smmahmudulhasan.com">
+                    <a
+                        className="font-mono "
+                        href="https://smmahmudulhasan.com"
+                    >
                         S M Mahmudul Hasan
                     </a>
                 </p>
