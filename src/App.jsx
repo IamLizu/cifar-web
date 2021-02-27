@@ -62,15 +62,15 @@ function App() {
 
     return (
         <div className="max-w-6xl mx-auto">
-            <header className="mt-6">
+            <header className="mt-4">
                 <div className="">
-                    <h1 className="text-4xl font-semibold text-gray-800 tracking-widest cursor-default my-10">
+                    <h1 className="text-4xl font-semibold text-gray-800 tracking-widest cursor-default my-7">
                         Cifar
                     </h1>
                 </div>
             </header>
 
-            <div className="grid grid-cols-2 bg-gray-100 mt-6 h-auto rounded-md">
+            <div className="grid grid-cols-2 bg-gray-100 mt-5 h-auto rounded-md">
                 <div className="space-y-6 self-center mx-auto">
                     <p className={`text-center text-red-600 ${alertDisplay}`}>
                         {alert}
@@ -167,21 +167,29 @@ function App() {
                 </div>
             </div>
 
-            {/* <a href="https://www.npmjs.com/package/cifar" target="blank">
-                <svg viewBox="0 0 27.23 27.23" className="h-5 w-5">
-                    <rect
-                        fill="#333333"
-                        width="27.23"
-                        height="27.23"
-                        rx="2"
-                    ></rect>
-                    <polygon
-                        fill="#fff"
-                        points="5.8 21.75 13.66 21.75 13.67 9.98 17.59 9.98 17.58 21.76 21.51 21.76 21.52 6.06 5.82 6.04 5.8 21.75"
-                    ></polygon>
-                </svg>
-            </a>
-            ; */}
+            <div className="mt-8 flex justify-between">
+                <p>
+                    <a
+                        className="font-medium"
+                        href="https://github.com/IamLizu/cifar-web"
+                    >
+                        GitHub
+                    </a>
+                    &nbsp;/&nbsp;
+                    <a
+                        className="font-medium"
+                        href="https://www.npmjs.com/package/cifar"
+                    >
+                        NPM Package Registry
+                    </a>
+                </p>
+                <p>
+                    Made with 💙 by{" "}
+                    <a className="font-mono" href="https://smmahmudulhasan.com">
+                        S M Mahmudul Hasan
+                    </a>
+                </p>
+            </div>
         </div>
     );
 }
