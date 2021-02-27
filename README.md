@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Encryption as a Password Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![GitHub Pages](https://github.com/IamLizu/cifar-web/actions/workflows/gh-pages.yml/badge.svg)](https://cifar.iamlizu.com/)
 
-## Available Scripts
+![Screenshot](https://i.imgur.com/FFQyNlJ.png)
 
-In the project directory, you can run:
+You can use the dumbest and remember able words to generate secret words(could be your passwords). Not an encryption algorithm though a little modification of Caesar Cipher(perhaps a stupid one).
 
-### `npm start`
+However, this may or may not (higher chances) solve the password remembering issue. So, the implication of 'Password Manager' is not literal.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Usage
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. At first, enter the string you want to generate your password with.
+2. Then please select how many characters you want ot shift. Please not that this shifting is forward only and limited.
 
-### `npm test`
+![Enter required details](https://i.imgur.com/0tdiHQB.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Now, press the generate button, a generated string will appear.
+4. Finally, click the button to copy the string to your clipboard.
 
-### `npm run build`
+![Generated hash](https://i.imgur.com/CvAuiz0.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## npm Package
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`cifar` is available via npm package registry. Install it with `npm i cifar`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Learn more about the npm package usage [here](https://www.npmjs.com/package/cifar).
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This was a pretty fun idea, nothing serious and not claimed as a password manager. However, you care more than welcomed to to contribute.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Make your awesome changes and submit a PR.
