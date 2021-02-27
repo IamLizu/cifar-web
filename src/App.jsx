@@ -143,17 +143,16 @@ function App() {
                         </h1>
 
                         <p className="text-gray-900 opacity-95">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Laborum fuga nulla natus. Quasi obcaecati illo
-                            eum, accusamus voluptate quisquam molestias deserunt
-                            hic debitis cum, alias vero possimus totam ullam
-                            voluptates?
+                            You can use the dumbest and remember able words to
+                            generate secret words(could be your passwords). Not
+                            an encryption algorithm though a little modification
+                            of Caesar Cipher(perhaps a stupid one).
                         </p>
 
                         <p className="text-gray-900 opacity-60">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Sit ut numquam quibusdam. Similique sequi
-                            minus cupiditate sint aliquam voluptate repudiandae.
+                            However, this may or may not (higher chances) solve
+                            the password remembering issue. So, the implication
+                            of 'Password Manager' is not literal.
                         </p>
                     </div>
 
