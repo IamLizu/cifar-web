@@ -188,10 +188,7 @@ function App() {
                 </p>
                 <p className="text-xs md:text-base ">
                     Made with 💙 by{" "}
-                    <a
-                        className="font-mono "
-                        href="https://smmahmudulhasan.com"
-                    >
+                    <a className="font-mono " href="http://smmahmudulhasan.com">
                         S M Mahmudul Hasan
                     </a>
                 </p>
